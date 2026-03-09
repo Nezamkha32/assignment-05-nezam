@@ -99,9 +99,9 @@ document.getElementById("searchBtn").addEventListener("click", async () => {
 });
 
 // Tabs
-document.getElementById("allBtn").addEventListener("click", () => loadIssues("all"));
-document.getElementById("openBtn").addEventListener("click", () => loadIssues("open"));
-document.getElementById("closedBtn").addEventListener("click", () => loadIssues("closed"));
+// document.getElementById("allBtn").addEventListener("click", () => loadIssues("all"));
+// document.getElementById("openBtn").addEventListener("click", () => loadIssues("open"));
+// document.getElementById("closedBtn").addEventListener("click", () => loadIssues("closed"));
 
-// // Default load
-// loadIssues();
+// Default load
+loadIssues();
