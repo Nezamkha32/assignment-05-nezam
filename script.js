@@ -103,5 +103,5 @@ document.getElementById("allBtn").addEventListener("click", () => loadIssues("al
 document.getElementById("openBtn").addEventListener("click", () => loadIssues("open"));
 document.getElementById("closedBtn").addEventListener("click", () => loadIssues("closed"));
 
-// Default load
-loadIssues();
+// // Default load
+// loadIssues();
