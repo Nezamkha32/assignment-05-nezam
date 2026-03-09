@@ -95,13 +95,13 @@ document.getElementById("searchBtn").addEventListener("click", async () => {
   hideSpinner();
 
   const issues = Array.isArray(data.data) ? data.data : data.issues;
-  displayIssues(issues);
+  // displayIssues(issues);
 });
 
 // Tabs
-// document.getElementById("allBtn").addEventListener("click", () => loadIssues("all"));
-// document.getElementById("openBtn").addEventListener("click", () => loadIssues("open"));
-// document.getElementById("closedBtn").addEventListener("click", () => loadIssues("closed"));
+document.getElementById("allBtn").addEventListener("click", () => loadIssues("all"));
+document.getElementById("openBtn").addEventListener("click", () => loadIssues("open"));
+document.getElementById("closedBtn").addEventListener("click", () => loadIssues("closed"));
 
 // Default load
 loadIssues();
