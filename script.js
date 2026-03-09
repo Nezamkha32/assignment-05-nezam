@@ -94,7 +94,7 @@ document.getElementById("searchBtn").addEventListener("click", async () => {
   const data = await res.json();
   hideSpinner();
 
-  // const issues = Array.isArray(data.data) ? data.data : data.issues;
+  const issues = Array.isArray(data.data) ? data.data : data.issues;
   displayIssues(issues);
 });
 
