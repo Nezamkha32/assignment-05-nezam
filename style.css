@@ -1,8 +1,25 @@
 @import "tailwindcss";
 
-.btn-primary {
+/* .btn-primary {
   background-color: #4ade80;
   color: white;
   border: none;
+} */
+
+/* Custom styles for GitHub Issues Tracker */
+
+body {
+  font-family: "Outfit", sans-serif;
 }
 
+/* Active tab button */
+.btn-primary.active {
+  background-color: #5b4ade; /* green */
+  color: white;
+}
+
+/* Issue card hover */
+#issuesContainer .card:hover {
+  transform: translateY(-4px);
+  transition: 0.2s ease-in-out;
+}

@@ -1,93 +1,58 @@
+
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Issues Tracker | Home</title>
-
-  <!-- Tailwind + DaisyUI -->
+  <title>GitHub Issues Tracker | Dashboard</title>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="style.css">
-
-
-      <!-- icons  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
 </head>
 <body class="bg-base-200 min-h-screen">
 
   <!-- Navbar -->
   <nav class="flex justify-between items-center bg-white p-4 shadow">
-    <h1 class="text-xl font-bold flex "><img class="w-[20px] m-[4px]" src="./assets/github-logo.png" alt="#"> GitHub Issues Tracker</h1>
+    <h1 class="text-xl font-bold flex items-center">
+      <img class="w-6 mr-2" src="./assets/github-logo.png" alt="Logo"> GitHub Issues Tracker
+    </h1>
     <div class="flex gap-2">
-      <input id="searchInput" type="text"  placeholder="🔍 Search issues..." class="input input-bordered rounded-full">
-      <button id="searchBtn" class="btn btn-primary rounded-full">➕New Issues</button>
+      <input id="searchInput" type="text" placeholder="🔍 Search issues..." class="input input-bordered rounded-full">
+      <button id="searchBtn" class="btn btn-primary rounded-full">➕ New Issue</button>
     </div>
   </nav>
 
-<!-- aperture -->
-
-<section>
-  <div>
-  <img src="./assets/Aperture.png" alt="">
-  <div class="">
-    <p>50 Issuses</p>
-    <p>Track and manage your project issues</p>
-  </div>
-
-  </div>
-  <div><p>Opem</p>
-  <p>Closed</p></div>
-</section>
-
-
-
-
+  <!-- Header Section -->
+  <section class="flex justify-between items-center bg-white shadow p-6 m-6 rounded-lg">
+    <div class="flex items-center gap-4">
+      <img src="./assets/aperture.png" alt="Aperture Icon" class="w-12 h-12">
+      <div>
+        <p class="font-bold text-lg">50 Issues</p>
+        <p class="text-gray-500">Track and manage your project issues</p>
+      </div>
+    </div>
+    <div class="flex gap-6">
+      <p class="text-green-600 font-semibold">Open</p>
+      <p class="text-purple-600 font-semibold">Closed</p>
+    </div>
+  </section>
 
   <!-- Tabs -->
-
-
-
-
-  <div class=" m-6 gap-4">
+  <div class="flex justify-center gap-4 m-6">
     <button class="btn btn-outline btn-primary" id="allBtn">All</button>
     <button class="btn btn-outline btn-primary" id="openBtn">Open</button>
     <button class="btn btn-outline btn-primary" id="closedBtn">Closed</button>
   </div>
 
-
-
   <!-- Spinner -->
-
-
-
   <div id="spinner" class="hidden text-center mt-6">
     <span class="loading loading-dots loading-lg"></span>
   </div>
 
-
-
-
   <!-- Issues Grid -->
-
-
-
-
-  <div id="issuesContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-  </div>
-
-
+  <div id="issuesContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6"></div>
 
   <!-- Modal -->
-
-
-
-
-
-  
   <dialog id="issueModal" class="modal">
     <div class="modal-box">
       <div class="flex justify-between items-start mb-4">
@@ -106,7 +71,6 @@
       </div>
     </div>
   </dialog>
-
 
   <script src="script.js"></script>
 </body>
