@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Issues Tracker | Login</title>
+
+  <!-- Tailwind + DaisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    * { font-family: "Outfit", sans-serif; }
+  </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-base-200">
+
+  <div class="card bg-base-100 w-full max-w-sm shadow-xl rounded-2xl">
+    <div class="card-body">
+      <div class="logo w-[100px] mx-auto">
+      <img src="./assets/github-logo.png" alt="#">
+      </div>
+      <h1 class="text-2xl font-bold text-center mb-4">GitHub Issues Tracker</h1>
+      <p class="text-center text-gray-500 mb-6">Sign in with demo credentials</p>
+
+      <label class="label font-semibold">Username</label>
+      <input id="input-username" type="text" class="input input-bordered w-full rounded-full" placeholder="Enter username">
+
+      <label class="label font-semibold mt-4">Password</label>
+      <input id="input-password" type="password" class="input input-bordered w-full rounded-full" placeholder="Enter password">
+
+      <button id="login-btn" class="btn btn-primary w-full mt-6 rounded-full">Sign In</button>
+      <br>
+      <div>OR</div>
+      <hr>
+
+      <p class="text-sm text-gray-500 mt-4 text-center">Demo:<br>Username: admin<br>Password: admin123</p>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
