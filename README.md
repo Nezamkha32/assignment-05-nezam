@@ -46,5 +46,5 @@ console.log(`Hello, ${name}!`);
 --------
 
 ## 📤 Submission
-- GitHub Repository Link: [Your Repo URL:https://github.com/Nezamkha32/assignment-05.git]
-- Live Site Link: [Your Live URL: https://nezamkha32.github.io/assignment-05/]
+- GitHub Repository Link: [Your Repo URL:https://github.com/Nezamkha32/assignment-05-nezam.git]
+- Live Site Link: [Your Live URL:https://nezamkha32.github.io/assignment-05-nezam/]
